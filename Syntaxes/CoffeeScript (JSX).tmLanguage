@@ -160,6 +160,31 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>(?&lt;!#){###(?!#)</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.csx</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>###}(?:[ \t]*\n)</string>
+			<key>name</key>
+			<string>comment.block.csx</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>@\w*</string>
+					<key>name</key>
+					<string>storage.type.annotation.csx</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>(?&lt;!#)###(?!#)</string>
 			<key>captures</key>
 			<dict>
